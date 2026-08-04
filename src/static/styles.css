@@ -60,9 +60,10 @@ section h3 {
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #d9e2ff;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background: linear-gradient(180deg, #f9fbff 0%, #f3f7ff 100%);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
@@ -72,6 +73,56 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border: 1px solid #e4ebff;
+  border-radius: 6px;
+}
+
+.participants-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.participants-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+  color: #2f3a56;
+  word-break: break-word;
+}
+
+.delete-participant {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  color: #c62828;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.delete-participant:hover {
+  background-color: #ffebee;
+}
+
+.delete-participant:focus-visible {
+  outline: 2px solid #c62828;
+  outline-offset: 2px;
 }
 
 .form-group {
